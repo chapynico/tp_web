@@ -1,0 +1,205 @@
+*{
+    Margin:0px;
+    padding:0px;
+    list-style:none;
+    text-decoration:none;
+    font-family: "Playfair Display', serif";
+    box-sizing: border-box; 
+}
+
+
+header #logo{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size:50px;
+    text-align:center;
+    line-height:60px;
+    position: relative;
+}
+
+header{
+    background-position: 100%;
+    background-repeat: repeat-y;  
+    background-image: url('img/fondo.jpeg');
+
+}
+
+header #logo2{
+    width: 60px;
+    height: 60px;
+}
+
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	right: 0; /* Establecemos la barra en la izquierda */
+	top: 0px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+	.social ul {
+		list-style: none;
+	}
+
+	.social ul li a {
+		display: inline-block;
+		color:#ffffff;
+		background: #000;
+        text-decoration: none;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		padding: 10px 15px;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+
+	.social ul li .icon-facebook {background:#fecb31;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-instagram {background: #fecb31;}
+	.social ul li .icon-mail {background: #fecb31;}
+
+	.social ul li a:hover{
+		background: #272727; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+
+    nav ul li{
+        padding:10px;
+        text-align:center;
+    }
+    
+    nav ul li a{
+        position: relative;
+        display:block;
+        background:rgb(245, 212, 102);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        line-height:40px;
+        color:black;
+    }
+    
+    nav ul li a:hover{
+        background:rgba(253, 220, 130, 0.556);
+    }
+    
+    nav ul li a:active{
+        background:rgb(255, 196, 0);
+    }
+    
+    #seccion3 {
+        width: 1000px;
+        height: auto;
+        padding:10px; 
+        margin: 100px;
+    }
+    
+    #seccion3 img{
+        border-radius:100%;
+        width:200px;
+        height:200px;
+        padding:10px;
+    }
+    
+    #seccion3 h1{
+        font-family:sans-serif;
+        font-size:40px;
+        padding:10px;
+    }
+    
+    #seccion3 p{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding:10px;
+    }
+
+
+    footer{
+        padding:20px 10px;
+    }
+    
+    footer div{
+        background:rgb(15, 15, 16);
+        text-align:center;
+        line-height:50px;
+        color:white;
+    }
+
+        /* PANTALLA DE ESCRITORIO GRANDE – LARGE (lg) */
+@media(min-width:1200px){
+
+    .col-lg-12{width:100%;}
+    .col-lg-11{width:91.66666667%;}
+    .col-lg-10{width:83.33333333%;}
+    .col-lg-9{width:75%}
+    .col-lg-8{width:66.66666667%}
+    .col-lg-7{width:58.33333333%}
+    .col-lg-6{width:50%;}
+    .col-lg-5{width:41.66666667%;}
+    .col-lg-4{width:33.33333333%;}
+    .col-lg-3{width:25%}
+    .col-lg-2{width:16.66666667%}
+    .col-lg-1{width:8.33333333%}
+    .col-lg-0{display:none;}
+    
+    #seccion4 article p img{
+        width:50%;
+    }
+    }
+    
+    /* PANTALLA DE ESCRITORIO MEDIANO – MEDIUM (md)*/
+    @media(max-width:1199px) and (min-width:992px){
+    
+    .col-md-12{width:100%;}
+    .col-md-11{width:91.66666667%;}
+    .col-md-10{width:83.33333333%;}
+    .col-md-9{width:75%}
+    .col-md-8{width:66.66666667%}
+    .col-md-7{width:58.33333333%}
+    .col-md-6{width:50%;}
+    .col-md-5{width:41.66666667%;}
+    .col-md-4{width:33.33333333%;}
+    .col-md-3{width:25%}
+    .col-md-2{width:16.66666667%}
+    .col-md-1{width:8.33333333%}
+    .col-md-0{display:none;}
+    
+    #seccion4 article p img{
+        width:60%;
+    }
+    }
+    
+    /* PANTALLA DE  TABLET– SMALL (sm)*/
+    @media(max-width:991px) and (min-width:768px){
+    
+    .col-sm-12{width:100%;}
+    .col-sm-11{width:91.66666667%;}
+    .col-sm-10{width:83.33333333%;}
+    .col-sm-9{width:75%}
+    .col-sm-8{width:66.66666667%}
+    .col-sm-7{width:58.33333333%}
+    .col-sm-6{width:50%;}
+    .col-sm-5{width:41.66666667%;}
+    .col-sm-4{width:33.33333333%;}
+    .col-sm-3{width:25%}
+    .col-sm-2{width:16.66666667%}
+    .col-sm-1{width:8.33333333%}
+    .col-sm-0{display:none;}
+    
+    #seccion4 article p img{
+        width:100%;
+        margin-bottom:20px;
+    }
+    }
+    
+    /* PANTALLA DE  PHONES– EXTRA SMALL (xs)*/
+    @media(max-width:767px){
+    
+    .col-xs-12{width:100%;}
+    .col-xs-11{width:91.66666667%;}
+    .col-xs-10{width:83.33333333%;}
+    .col-xs-9{width:75%}
+    .col-xs-8{width:66.66666667%}
+    .col-xs-7{width:58.33333333%}
+    .col-xs-6{width:50%;}
+    .col-xs-5{width:41.66666667%;}
+    .col-xs-4{width:33.33333333%;}
+    .col-xs-3{width:25%}
+    .col-xs-2{width:16.66666667%}
+    .col-xs-1{width:8.33333333%}
+    .col-xs-0{display:none;}
+    }
